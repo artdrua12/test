@@ -11,9 +11,10 @@ import IconCommunity from "./components/icons/IconCommunity.vue";
     </div>
     <div class="header">
       <IconCommunity></IconCommunity>
-      <span> Text</span>
-      <button class="button">Вход</button>
-      <button class="button">Регистрация</button>
+      <span class="text"> Text</span>
+
+      <button class="button enter">Вход</button>
+      <button class="button registration">Регистрация</button>
     </div>
     <div class="main">
       <the-block v-for="(item, index) in 15" :key="index"></the-block>
@@ -51,11 +52,26 @@ import IconCommunity from "./components/icons/IconCommunity.vue";
   gap: 10px;
   height: 100%;
 }
-.text{
+
+.text {
   margin-right: auto;
 }
-.button{
-  height: 20px;
+
+.button {
+  width: 150px;
+  height: 34px;
+  border-radius: 4px;
+  background-color: #201379;
+  color: white;
+}
+
+.enter {
+  border: 2px solid blue;
+}
+
+.registration {
+  border: none;
+  background: linear-gradient(0deg, blue, rgb(85, 0, 255));
 }
 
 .main {

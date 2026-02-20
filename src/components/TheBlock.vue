@@ -33,7 +33,6 @@ defineProps({
   background-size: cover;
   background-position: center center;
   height: 100%;
-  min-height: 70px;
 }
 
 .bottom {
